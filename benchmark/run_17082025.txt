@@ -1,0 +1,46 @@
+Configuration:
+  • Rules: 30
+  • Events per run: 10000
+  • Benchmark runs: 10
+  • Warmup runs: 3
+
+Running 3 warmup iterations...
+... warmup complete
+
+Running 10 benchmark iterations...
+Run 1/10: 3707 events/sec
+Run 2/10: 3775 events/sec
+Run 3/10: 3714 events/sec
+Run 4/10: 3719 events/sec
+Run 5/10: 3689 events/sec
+Run 6/10: 3788 events/sec
+Run 7/10: 3708 events/sec
+Run 8/10: 3690 events/sec
+Run 9/10: 3662 events/sec
+Run 10/10: 3622 events/sec
+
+📊 Benchmark Summary (10 runs)
+=====================================
+
+Throughput (events/sec):
+  • Average: 3707.31
+  • Median:  3707.60
+  • Min:     3621.70
+  • Max:     3787.72
+
+Duration (ms):
+  • Average: 2698.76
+  • Median:  2698.86
+  • Min:     2640.43
+  • Max:     2760.65
+
+Memory Usage:
+  • Peak Heap (avg): 21.78 MB
+  • Memory Delta (avg): -4.98 MB
+  • Memory Delta (max): 3.99 MB
+
+Configuration:
+  • Events per run: 10.000
+  • Rules: 30
+  • Total events processed: 100.000
+  • Total rule evaluations: 3.000.000
