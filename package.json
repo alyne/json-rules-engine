@@ -20,7 +20,8 @@
     "benchmark:quick": "node --expose-gc benchmark/benchmark.js --events 100 --rules 10 --runs 3",
     "benchmark:full": "node --expose-gc benchmark/benchmark.js --events 10000 --rules 30 --runs 10",
     "benchmark:compare": "node --expose-gc benchmark/benchmark-comparison.js",
-    "benchmark:compare:quick": "node --expose-gc benchmark/benchmark-comparison.js --events 100 --rules 10 --runs 3"
+    "benchmark:compare:quick": "node --expose-gc benchmark/benchmark-comparison.js --events 100 --rules 10 --runs 3",
+    "benchmark:compare:all": "node --expose-gc benchmark/benchmark-fast-vs-ultra.js"
   },
   "repository": {
     "type": "git",
