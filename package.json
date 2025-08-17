@@ -15,7 +15,12 @@
     "prepublishOnly": "npm run build",
     "build": "babel --stage 1 -d dist/ src/",
     "watch": "babel --watch --stage 1 -d dist/ src",
-    "examples": "./test/support/example_runner.sh"
+    "examples": "./test/support/example_runner.sh",
+    "benchmark": "node --expose-gc benchmark/benchmark.js",
+    "benchmark:quick": "node --expose-gc benchmark/benchmark.js --events 100 --rules 10 --runs 3",
+    "benchmark:full": "node --expose-gc benchmark/benchmark.js --events 10000 --rules 30 --runs 10",
+    "benchmark:compare": "node --expose-gc benchmark/benchmark-comparison.js",
+    "benchmark:compare:quick": "node --expose-gc benchmark/benchmark-comparison.js --events 100 --rules 10 --runs 3"
   },
   "repository": {
     "type": "git",
