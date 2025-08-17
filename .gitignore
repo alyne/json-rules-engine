@@ -6,3 +6,4 @@ npm-debug.log
 dist
 *.tgz
 package-lock.json
+.nyc_output
