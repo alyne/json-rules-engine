@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run benchmark:quick:*)",
+      "Bash(npm run benchmark:*)",
+      "Bash(npm test)",
+      "Bash(npm run lint:*)",
+      "Bash(cp:*)",
+      "Bash(git checkout:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": false
+}
