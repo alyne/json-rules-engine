@@ -12,19 +12,30 @@ import RuleSync from './sync/rule-sync'
 import AlmanacSync from './sync/almanac-sync'
 import ConditionSync from './sync/condition-sync'
 
-export { 
-  Fact, 
-  Rule, 
-  Operator, 
-  Engine, 
-  Almanac, 
+// Import optimized variants
+import EngineFast from './optimized/engine-fast'
+import AlmanacFast from './optimized/almanac-fast'
+import EngineUltra from './optimized/engine-ultra'
+import AlmanacUltra from './optimized/almanac-ultra'
+
+export {
+  Fact,
+  Rule,
+  Operator,
+  Engine,
+  Almanac,
   OperatorDecorator,
   // Sync variants
   EngineSync,
   FactSync,
   RuleSync,
   AlmanacSync,
-  ConditionSync
+  ConditionSync,
+  // Optimized variants
+  EngineFast,
+  AlmanacFast,
+  EngineUltra,
+  AlmanacUltra
 }
 
 export default function (rules, options) {
