@@ -32,6 +32,16 @@ export default class RuleResult {
     return Promise.resolve()
   }
 
+  resolveEventParamsSync (almanac) {
+    if (this.event.params !== null && typeof this.event.params === 'object') {
+      for (const key in this.event.params) {
+        if (Object.prototype.hasOwnProperty.call(this.event.params, key)) {
+          this.event.params[key] = almanac.getValue(this.event.params[key])
+        }
+      }
+    }
+  }
+
   toJSON (stringify = true) {
     const props = {
       conditions: this.conditions.toJSON(false),
